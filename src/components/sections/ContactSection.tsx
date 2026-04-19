@@ -17,7 +17,7 @@ const contactLinks = [
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/vasyl',
+    value: 'github.com/vasjaNet',
     href: personalInfo.github,
     color: 'text-slate-700 dark:text-slate-300',
     bgColor: 'bg-slate-500/10',
@@ -25,7 +25,7 @@ const contactLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/vasyl',
+    value: 'linkedin.com/in/vasyl-synenko-28468362',
     href: personalInfo.linkedin,
     color: 'text-blue-600',
     bgColor: 'bg-blue-500/10',

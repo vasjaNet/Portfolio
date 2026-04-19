@@ -8,7 +8,7 @@ const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
+  // { id: 'projects', label: 'Projects' }, // Temporarily hidden
   { id: 'skills', label: 'Skills' },
   { id: 'contact', label: 'Contact' },
 ];

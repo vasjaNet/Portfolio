@@ -71,14 +71,14 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
-              <Button
+              {/*<Button
                 size="lg"
                 onClick={() => handleScrollToSection('projects')}
                 className="group"
               >
                 View My Work
                 <ArrowDown className="w-4 h-4 ml-2 transition-transform group-hover:translate-y-1" />
-              </Button>
+              </Button>*/}
               <Button
                 size="lg"
                 variant="outline"
@@ -154,16 +154,16 @@ export function HeroSection() {
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -top-4 -left-4 bg-card border border-border px-4 py-2 rounded-lg shadow-lg"
               >
-                <span className="text-sm font-medium text-foreground">8+ Years</span>
+                <span className="text-sm font-medium text-foreground">15+ Years</span>
               </motion.div>
 
-              <motion.div
+              {/*<motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
                 className="absolute -bottom-4 -right-4 bg-card border border-border px-4 py-2 rounded-lg shadow-lg"
               >
                 <span className="text-sm font-medium text-foreground">10M+ Transactions</span>
-              </motion.div>
+              </motion.div>*/}
 
               <motion.div
                 animate={{ y: [0, -8, 0] }}

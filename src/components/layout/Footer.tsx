@@ -10,20 +10,20 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <Code2 className="w-6 h-6 text-primary" />
             <span className="text-sm text-muted-foreground">
-              © {currentYear} Vasyl. All rights reserved.
+              © {currentYear} Vasyl Synenko. All rights reserved.
             </span>
           </div>
 
           <div className="flex items-center gap-4">
             <a
-              href="mailto:vasyl@example.com"
+              href="mailto:vasjasynenko@gmail.com"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Email"
             >
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com/vasyl"
+              href="https://github.com/vasjaNet"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
@@ -32,7 +32,7 @@ export function Footer() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/vasyl"
+              href="https://www.linkedin.com/in/vasyl-synenko-28468362/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"

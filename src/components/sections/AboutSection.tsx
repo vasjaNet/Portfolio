@@ -4,7 +4,7 @@ import { Section, SectionHeader } from '@/components/layout/Section';
 import { about } from '@/data/portfolio';
 
 const highlights = [
-  { icon: Code2, label: '8+ Years Experience' },
+  { icon: Code2, label: '15+ Years Experience' },
   { icon: Cpu, label: 'Microservices Expert' },
   { icon: Users, label: 'Team Lead' },
 ];

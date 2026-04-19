@@ -23,24 +23,24 @@ export interface Skill {
 }
 
 export const personalInfo = {
-  name: 'Vasyl',
-  title: 'Senior Java Developer',
+  name: 'Vasyl Synenko',
+  title: 'Senior Java/Full Stack Developer',
   tagline: 'Building scalable, robust, and high-performance enterprise applications',
   location: 'Remote / Worldwide',
-  email: 'vasyl@example.com',
-  github: 'https://github.com/vasyl',
-  linkedin: 'https://linkedin.com/in/vasyl',
+  email: 'vasjasynenko@gmail.com',
+  github: 'https://github.com/vasjaNet',
+  linkedin: 'https://www.linkedin.com/in/vasyl-synenko-28468362/',
   resume: '/resume.pdf',
 };
 
 export const about = {
-  summary: `I am a Senior Java Developer with over 8 years of experience designing and building enterprise-grade applications. My expertise spans microservices architecture, cloud-native development, and high-performance systems that handle millions of transactions daily.
+  summary: `I am a Senior Java Developer with over 15 years of experience designing and building enterprise-grade applications. My expertise spans microservices architecture, cloud-native development, and high-performance systems that handle millions of transactions daily.
 
 I specialize in the Spring ecosystem, including Spring Boot, Spring Cloud, and Spring Security. My passion lies in creating clean, maintainable code and mentoring junior developers to help them grow their technical skills.
 
-When I'm not coding, I enjoy contributing to open-source projects, writing technical articles, and staying up-to-date with the latest Java ecosystem developments.`,
+When I'm not coding, I enjoy writing technical articles, and staying up-to-date with the latest Java ecosystem developments.`,
   highlights: [
-    '8+ years of Java development experience',
+    '15+ years of Java development experience',
     'Microservices architecture specialist',
     'Cloud-native application expert',
     'Team lead and mentor',
@@ -49,44 +49,101 @@ When I'm not coding, I enjoy contributing to open-source projects, writing techn
 
 export const experiences: Experience[] = [
   {
-    id: '1',
-    company: 'TechFin Solutions',
-    role: 'Senior Java Developer',
-    period: '2022 - Present',
-    description: [
-      'Led the migration of monolithic application to microservices architecture, reducing deployment time by 70%',
-      'Architected and implemented event-driven systems using Kafka, processing 10M+ daily transactions',
-      'Established CI/CD pipelines with GitHub Actions and Kubernetes, achieving 99.9% uptime',
-      'Mentored team of 5 junior developers, conducting code reviews and technical training',
+    "id": "1",
+    "company": "VITech",
+    "role": "Senior Java Developer",
+    "period": "2022 - 2025",
+    "description": [
+      "Designed and implemented backend for a clinical study marketplace platform connecting studies with clinics",
+      "Built AI-enhanced matching logic using AWS Bedrock for automated clinic-study pairing",
+      "Designed and implemented integrations with Salesforce CRM",
+      "Implemented frontend using React and integrated monitoring via NewRelic",
+      "Participated in architectural design, planning, and performance optimization",
+      "Mentored junior developers"
     ],
-    technologies: ['Java 21', 'Spring Boot', 'Kafka', 'Kubernetes', 'PostgreSQL', 'Redis'],
+    "technologies": ["Java 21", "Spring Boot", "Spring Data JPA", "Spring Security", "PostgreSQL", "React", "Salesforce", "Docker", "AWS Bedrock", "AWS S3", "AWS CloudWatch", "Flyway", "Retrofit", "OpenAPI"]
   },
   {
-    id: '2',
-    company: 'DataFlow Systems',
-    role: 'Java Developer',
-    period: '2019 - 2022',
-    description: [
-      'Developed RESTful APIs serving 5M+ requests daily with sub-100ms response times',
-      'Implemented caching strategies with Redis, reducing database load by 60%',
-      'Built real-time data processing pipelines using Spring Batch and Apache Camel',
-      'Collaborated with DevOps team to optimize Docker containers and AWS infrastructure',
+    "id": "2",
+    "company": "VITech",
+    "role": "Senior Java Developer",
+    "period": "2021 - 2022",
+    "description": [
+      "Designed and implemented backend for a patient cohort builder module",
+      "Enabled dynamic UI-driven criteria definition for retrieving patient cohorts from large datasets",
+      "Participated in architectural design, planning, and performance optimization"
     ],
-    technologies: ['Java 11', 'Spring Cloud', 'AWS', 'Docker', 'MongoDB', 'Elasticsearch'],
+    "technologies": ["Java", "Spring Boot", "Elasticsearch", "Redis", "Docker", "Kubernetes", "AWS EC2"]
   },
   {
-    id: '3',
-    company: 'Enterprise Solutions Ltd',
-    role: 'Junior Java Developer',
-    period: '2017 - 2019',
-    description: [
-      'Developed and maintained enterprise web applications using Spring Framework',
-      'Implemented security features with Spring Security and JWT authentication',
-      'Created comprehensive unit and integration tests with JUnit and Mockito',
-      'Participated in agile development processes and daily standups',
+    "id": "3",
+    "company": "VITech",
+    "role": "Full Stack Software Developer",
+    "period": "2021",
+    "description": [
+      "Migrated cross-platform nursing home patient tracking app from Ionic 3 to Ionic 5",
+      "Added application monitoring with Prometheus and Grafana via Spring Boot Actuator and Micrometer"
     ],
-    technologies: ['Java 8', 'Spring MVC', 'Hibernate', 'MySQL', 'JUnit', 'Maven'],
+    "technologies": ["Java", "Spring Boot", "Spring Boot Actuator", "Micrometer", "Prometheus", "Grafana", "Ionic", "Angular", "Docker", "Kubernetes"]
   },
+  {
+    "id": "4",
+    "company": "VITech",
+    "role": "Frontend Software Developer",
+    "period": "2020 - 2021",
+    "description": [
+      "Designed and implemented an Angular application visualizing care program effectiveness",
+      "Designed and implemented Sisense BI dashboards for healthcare analytics",
+      "Integrated Sisense dashboards into the Angular application"
+    ],
+    "technologies": ["TypeScript", "Angular", "Sisense"]
+  },
+  {
+    "id": "5",
+    "company": "VITech",
+    "role": "Lead / Full Stack Developer",
+    "period": "2017 - 2020",
+    "description": [
+      "Designed and implemented frontend and backend of a high-load fault-tolerant distributed system with microservices architecture",
+      "Built batch processing pipelines consuming data from multiple sources in various formats",
+      "Migrated UI from Apache Click to Angular",
+      "Delivered a configuration and monitoring portal for processing status visibility"
+    ],
+    "technologies": ["Java", "Spring Boot", "Spring Integration", "Spring Batch", "Spring AMQP", "Hibernate", "MySQL", "RabbitMQ", "Kafka", "HBase", "Angular", "Docker", "JBoss", "AWS", "ELK", "Liquibase"]
+  },
+  {
+    "id": "6",
+    "company": "VITech",
+    "role": "Java Developer",
+    "period": "2013 - 2017",
+    "description": [
+      "Developed and maintained a monolithic healthcare application for storing patient medical records",
+      "Implemented reporting and alerting features for medical staff and patients using JasperReports",
+      "Contributed to frontend development using AngularJS and JSP"
+    ],
+    "technologies": ["Java", "JBoss", "Struts", "Spring", "EJB", "JSP", "Hibernate", "JasperReports", "AngularJS", "MySQL"]
+  },
+  {
+    "id": "7",
+    "company": "Prykarpattyaoblenergo",
+    "role": "Lead Software Developer",
+    "period": "2008 - 2012",
+    "description": [
+      "Built and maintained a Java-based billing system for electrical equipment connection",
+      "Led a team of 4 developers, gathered requirements, designed architecture, and coordinated development"
+    ],
+    "technologies": ["Java", "Struts", "Hibernate", "Spring", "jQuery"]
+  },
+  {
+    "id": "8",
+    "company": "Prykarpattyaoblenergo",
+    "role": "Software Developer",
+    "period": "2008 - 2009",
+    "description": [
+      "Developed a desktop system for analyzing and registering power network equipment"
+    ],
+    "technologies": ["Delphi", "Firebird"]
+  }
 ];
 
 export const projects: Project[] = [
