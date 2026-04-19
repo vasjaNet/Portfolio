@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { personalInfo } from '@/data/portfolio';
 
