@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Download, Github, Linkedin, Mail } from 'lucide-react';
+import { LeetCodeIcon } from '@/components/ui/LeetCodeIcon';
 import { Button } from '@/components/ui/Button';
 import { personalInfo } from '@/data/portfolio';
 
@@ -111,6 +112,15 @@ export function HeroSection() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href={personalInfo.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                aria-label="LeetCode"
+              >
+                <LeetCodeIcon className="w-5 h-5" />
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, Copy, Check } from 'lucide-react';
+import { LeetCodeIcon } from '@/components/ui/LeetCodeIcon';
 import { useState } from 'react';
 import { Section, SectionHeader } from '@/components/layout/Section';
 import { Button } from '@/components/ui/Button';
@@ -30,6 +31,14 @@ const contactLinks = [
     color: 'text-blue-600',
     bgColor: 'bg-blue-500/10',
   },
+  {
+    icon: LeetCodeIcon,
+    label: 'LeetCode',
+    value: 'leetcode.com/u/VasylSynenko',
+    href: personalInfo.leetcode,
+    color: 'text-orange-500',
+    bgColor: 'bg-orange-500/10',
+  },
 ];
 
 export function ContactSection() {
@@ -53,7 +62,7 @@ export function ContactSection() {
       />
 
       <div className="max-w-4xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {contactLinks.map((link, index) => (
             <motion.a
               key={link.label}
