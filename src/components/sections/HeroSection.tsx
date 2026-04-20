@@ -121,6 +121,7 @@ export function HeroSection() {
               </a>
               <a
                 href={personalInfo.resume}
+                download="Vasyl_Synenko_CV.pdf"
                 className="p-3 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 aria-label="Download Resume"
               >

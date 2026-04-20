@@ -1,4 +1,5 @@
 import { Code2, Github, Linkedin, Mail } from 'lucide-react';
+import { personalInfo } from '@/data/portfolio';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,20 +11,20 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <Code2 className="w-6 h-6 text-primary" />
             <span className="text-sm text-muted-foreground">
-              © {currentYear} Vasyl Synenko. All rights reserved.
+              © {currentYear} {personalInfo.name}. All rights reserved.
             </span>
           </div>
 
           <div className="flex items-center gap-4">
             <a
-              href="mailto:vasjasynenko@gmail.com"
+              href={`mailto:${personalInfo.email}`}
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Email"
             >
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com/vasjaNet"
+              href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
@@ -32,7 +33,7 @@ export function Footer() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/vasyl-synenko-28468362/"
+              href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"

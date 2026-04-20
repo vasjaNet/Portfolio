@@ -63,7 +63,7 @@ export function Header() {
             className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
           >
             <Code2 className="w-8 h-8 text-primary" />
-            <span className="text-xl font-bold font-mono">Vasyl</span>
+            <span className="text-xl font-bold font-mono">Vasyl Synenko</span>
           </a>
 
           {/* Desktop Navigation */}

@@ -30,7 +30,7 @@ export const personalInfo = {
   email: 'vasjasynenko@gmail.com',
   github: 'https://github.com/vasjaNet',
   linkedin: 'https://www.linkedin.com/in/vasyl-synenko-28468362/',
-  resume: '/resume.pdf',
+  resume: `${import.meta.env.BASE_URL}VASYL_SYNENKO_CV.pdf`,
 };
 
 export const about = {
