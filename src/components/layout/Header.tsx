@@ -33,10 +33,20 @@ export function Header() {
   };
 
   return (
+    <>
+      {/* Backdrop overlay — blurs page content when mobile menu is open */}
+      <div
+        className={cn(
+          'fixed inset-0 z-40 backdrop-blur-md bg-background/40 md:hidden transition-opacity duration-300',
+          mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        )}
+        onClick={() => setMobileMenuOpen(false)}
+      />
+
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled
+        isScrolled || mobileMenuOpen
           ? 'bg-background/80 backdrop-blur-lg shadow-lg border-b border-border'
           : 'bg-transparent'
       )}
@@ -119,5 +129,6 @@ export function Header() {
         </nav>
       </div>
     </header>
+    </>
   );
 }
